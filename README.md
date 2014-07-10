@@ -39,6 +39,17 @@ c.pop();//Y
 c.length;//0
 ```
 
+### With Closure Function (Constructor)
+
+```js
+var CustomClass = ArrayLike.implementTo(function(){
+	this.hoge = "hoge!";
+});
+CustomClass.prototype.page = function(){
+	return "page!";
+}
+```
+
 ### Extend NodeList with Array-like methods
 
 ```js
